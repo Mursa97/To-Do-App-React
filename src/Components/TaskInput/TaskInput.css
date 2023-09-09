@@ -2,15 +2,15 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    border-radius: 15px;
+    border-radius: 18px;
     background: #FFF;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
-    padding: 10px 13px 10px 16px;
+    padding: 10px 13px 10px 13px;
     margin: 30px 0 15px 0;
 }
 
 .input-active {
-    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25), 0px 0px 10px 0px rgba(75, 42, 244, 0.25);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1), 0px 0px 10px 0px rgba(75, 42, 244, 0.20);
 }
 
 .task-input-container .left-text {
@@ -19,6 +19,7 @@
     color: #4B2AF4;
     gap: 8px;
     white-space: nowrap;
+    margin-left: 10px;
 }
 
 .task-input-container .left-text img {
@@ -55,7 +56,7 @@
 .task-input-container .buttons button {
     font-size: 12px;
     padding: 6px 10px;
-    border-radius: 5px;
+    border-radius: 7px;
     border: 1px solid #4B2AF4;
     background: #DDD8F7;
     color: #4B2AF4;
@@ -72,11 +73,19 @@
     margin-left: 10px;
     border-radius: 10px;
     border: 1px solid #E2DCFF;
-    filter: drop-shadow(0px 0px 5px rgba(75, 42, 244, 0.50));
     white-space: nowrap;
+    transition: 0.2s;
+}
+.task-input-container .buttons button:nth-child(3):hover {
+    filter: drop-shadow(0px 0px 5px rgba(75, 42, 244, 0.50));
+    background-color: #593af5;
 }
 
 .task-input-container .buttons .inactive {
     opacity: 50%;
     border: none;
+}
+
+.task-input-container .buttons .inactive:hover {
+    opacity: 70%;
 }
