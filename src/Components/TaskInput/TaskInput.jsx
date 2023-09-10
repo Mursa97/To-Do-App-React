@@ -2,6 +2,7 @@ import React from 'react'
 import './TaskInput.css'
 import PinIcon from '../../img/pin.svg'
 import { useState } from 'react'
+import { v4 as uuidv4 } from 'uuid'
 
 const TaskInput = ({todayTasks, tomorrowTasks, setToday, setTomorrow}) => {
   
@@ -10,7 +11,7 @@ const TaskInput = ({todayTasks, tomorrowTasks, setToday, setTomorrow}) => {
   const [isFocused, setIsFocused] = useState(false)
 
   const addTask = () => {
-    const task = {task: inputVal, day: taskDay}
+    const task = {id: uuidv4(),task: inputVal, day: taskDay}
 
     if (task.day === true && inputVal != '') {
       setToday([...todayTasks, task])
@@ -41,6 +42,7 @@ const TaskInput = ({todayTasks, tomorrowTasks, setToday, setTomorrow}) => {
                 onChange={(e) => setInputVal(e.target.value)} 
                 onFocus={() => setIsFocused(true)} 
                 onBlur={() => setIsFocused(false)} 
+                onKeyDown={(e) => { if (e.code === 'Enter') {addTask()} }}
                 type="text" 
                 placeholder='Enter a task...' />
 

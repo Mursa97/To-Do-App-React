@@ -1,6 +1,15 @@
 .task-container {
+    width: 100%;
     display: flex;
     padding: 0 0 5px 0;
     gap: 5px;
+    padding: 10px 5px;
     align-items: center;
+    border-bottom: 1px solid #cacaca;
+    flex-wrap: nowrap;
+}
+
+.task-container:hover {
+    background-color: #4c2af40a;
+    border-radius: 8px;
 }

@@ -5,7 +5,7 @@
     border-radius: 18px;
     background: #FFF;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
-    padding: 10px 13px 10px 13px;
+    padding: 10px 5px 10px 13px;
     margin: 30px 0 15px 0;
 }
 
@@ -46,17 +46,22 @@
     color: #999;
 }
 
+.task-input-container input:hover::placeholder, .task-input-container input:focus::placeholder {
+    color: #404040;
+}
+
+
 .task-input-container .buttons {
     display: flex;
-    gap: 5px;
+    gap: 8px;
     align-items: center;
     width: 255px;
 }
 
 .task-input-container .buttons button {
     font-size: 12px;
-    padding: 6px 10px;
-    border-radius: 7px;
+    padding: 5px 8px;
+    border-radius: 9px;
     border: 1px solid #4B2AF4;
     background: #DDD8F7;
     color: #4B2AF4;
@@ -82,10 +87,10 @@
 }
 
 .task-input-container .buttons .inactive {
-    opacity: 50%;
+    opacity: 70%;
     border: none;
 }
 
 .task-input-container .buttons .inactive:hover {
-    opacity: 70%;
+    opacity: 85%;
 }
