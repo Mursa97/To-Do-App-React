@@ -34,3 +34,14 @@ body {
 .App .dp-none {
   display: none;
 }
+
+@media (max-width: 576px) {
+  .App {
+    margin-top: 13px;
+  }
+  
+  .App .tasks {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}

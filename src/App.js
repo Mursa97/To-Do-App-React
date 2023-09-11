@@ -33,15 +33,20 @@ function App() {
       </div>
 
       {
+        //ha a todayTasks vagy a tomorrowTasks array hossza nagyobb 0-nál akkor megjelennek a TaskActions-ok
         todayTasks.length > 0 || tomorrowTasks.length > 0 
+        
         ?
+
         <TaskActions selectedTasks={selectedTasks}
                    setSelected={(e) => {setSelectedTasks(e)}}
                    todayTasks={todayTasks}
                    setToday={(e) => {setTodayTasks(e)}}
                    tomorrowTasks={tomorrowTasks}
                    setTomorrow={(e) => {setTomorrowTasks(e)}}  />
+        
         :
+        
         ''
       }
       

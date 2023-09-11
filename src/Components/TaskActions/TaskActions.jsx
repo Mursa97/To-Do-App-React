@@ -39,18 +39,18 @@ const TaskActions = ({selectedTasks, setSelected, todayTasks, setToday ,tomorrow
   return (
     <div className='task-actions-container'>
 
-        <button className='action' onClick={() => {moveTomorrow()}}>
-            <img src={TomorrowIcon} />
-            <span>Tomorrow</span>
-        </button>
-
         <button className='action' onClick={() => {moveToday()}}>
-            <img src={TodayIcon} />
+            <img src={TodayIcon} alt='Move task to today tasks'/>
             <span>Today</span>
         </button>
 
+        <button className='action' onClick={() => {moveTomorrow()}}>
+            <img src={TomorrowIcon} alt='Move task to tomorrow tasks'/>
+            <span>Tomorrow</span>
+        </button>
+
         <button className='action' onClick={() => {deleteTask()}}>
-            <img src={DeleteIcon} />
+            <img src={DeleteIcon} alt='Delete selected tasks'/>
             <span>Delete</span>
         </button>
 
