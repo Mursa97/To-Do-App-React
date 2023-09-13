@@ -44,6 +44,7 @@
 
 .task-input-container input::placeholder {
     color: #999;
+    transition: 0.2s;
 }
 
 .task-input-container input:hover::placeholder, .task-input-container input:focus::placeholder {
@@ -66,6 +67,7 @@
     background: #DDD8F7;
     color: #4B2AF4;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 /* Send button */

@@ -34,6 +34,11 @@
     margin: 20px 10px 10px 10px;
 }
 
+.task-card-container .tasks .task-motion {
+    border-bottom: 1px solid #404040;
+    width: 100%;
+}
+
 .task-card-container .tasks p {
     align-self: center;
     justify-self: center;

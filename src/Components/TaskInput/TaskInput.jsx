@@ -47,11 +47,15 @@ const TaskInput = ({todayTasks, tomorrowTasks, setToday, setTomorrow}) => {
                 placeholder='Enter a task...' />
 
         <div className='buttons'>
-            <button onClick={() => setTaskDay(true)} className={taskDay ? '' : 'inactive'}>Today</button>
+          
+            <button onClick={() => setTaskDay(true)} 
+                    className={taskDay ? '' : 'inactive'}>Today</button>
 
-            <button onClick={() => setTaskDay(false)} className={taskDay ? 'inactive' : ''}>Tomorrow</button>
+            <button onClick={() => setTaskDay(false)} 
+                    className={taskDay ? 'inactive' : ''}>Tomorrow</button>
 
             <button onClick={() => addTask()}>Add Task</button>
+
         </div>
         
     </div>
